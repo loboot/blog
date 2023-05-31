@@ -8,12 +8,30 @@ export default defineConfig({
     // https://vitepress.dev/reference/default-theme-config
     nav: [
       { text: 'Home', link: '/' },
-      { text: 'Articles', link: '/articles/如何搭建博客_2023', items: ['1', '2'] },
+      {
+        text: 'Articles',
+        items: [
+          {
+            text: '如何搭建博客',
+            link: '/articles/如何搭建博客_2023',
+          },
+          {
+            text: 'Shell',
+            link: '/articles/学习一下shell_2023',
+          },
+        ],
+      },
     ],
     sidebar: [
       {
         text: 'Articles',
-        items: [{ text: '如何搭建博客', link: '/articles/如何搭建博客_2023' }],
+        items: [
+          { text: '如何搭建博客', link: '/articles/如何搭建博客_2023' },
+          {
+            text: 'Shell',
+            link: '/articles/学习一下shell_2023',
+          },
+        ],
       },
     ],
 
